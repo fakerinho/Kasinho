@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wielmożne Kasyno - Ekskluzywna Rozrywka</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">WIELMOŻNE KASYNO</div>
+        <div class="user-info">
+            <span>Saldo: <strong id="global-balance">100.00 PLN</strong></span>
+            <button class="deposit-btn">Depozyt</button>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="main-title">Witaj w Wielmożnym Kasynie</h1>
+            <p class="tagline">Miejsce, gdzie grosz staje się fortuną.</p>
+        </div>
+    </div>
+
+    <div class="live-stats">
+        <div class="stat-item">
+            <span class="dot"></span> Ostatnia wygrana: <strong id="last-win">34.20 PLN</strong> (Gracz_77)
+        </div>
+        <div class="stat-item">
+            Jackpot: <strong class="gold-text">1,240.55 PLN</strong>
+        </div>
+    </div>
+
+    <main class="container">
+        <h2 class="section-title">Nasze Ekskluzywne Automaty</h2>
+        
+        <div class="game-selection">
+            <div class="game-card" onclick="location.href='grosik/grosik.html'">
+                <div class="badge">KLASYKA</div>
+                <div class="game-image">🍋</div>
+                <div class="game-info">
+                    <h3>1x3 Grosik Slot</h3>
+                    <p>Minimalistyczna elegancja za 20 groszy.</p>
+                    <div class="game-meta">RTP: 95% | Zmienność: Mała</div>
+                    <button class="play-btn">Graj Teraz</button>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="location.href='zbieracz/zbieracz.html'">
+                <div class="badge premium">PREMIUM</div>
+                <div class="game-image">⚙️</div>
+                <div class="game-info">
+                    <h3>Zbieracz: Ewolucja</h3>
+                    <p>Rozbuduj swój system i zdominuj bębny.</p>
+                    <div class="game-meta">RTP: 94.2% | Zmienność: Wysoka</div>
+                    <button class="play-btn">Ewoluuj</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-badges">
+            <span class="cert">18+</span>
+            <span class="cert">Fair Play Certified</span>
+            <span class="cert">Grosik Tech™</span>
+        </div>
+        <p>&copy; 2026 Wielmożne Kasyno. Graj odpowiedzialnie.</p>
+    </footer>
+
+</body>
+</html>

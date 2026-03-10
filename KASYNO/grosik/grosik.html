@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Grosik Slot - Wielmożne Kasyno</title>
+    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="grosik-ui.css"> </head>
+<body>
+
+    <div class="game-container">
+        <button class="back-btn" onclick="location.href='../index.html'">⬅ Powrót do Lobby</button>
+        
+        <div class="slot-machine">
+            <h1 class="slot-title">GROSIK 1x3</h1>
+            
+            <div class="reels-container">
+                <div class="reel" id="reel1">🍋</div>
+                <div class="reel" id="reel2">🍋</div>
+                <div class="reel" id="reel3">🍋</div>
+                <div class="win-line"></div>
+            </div>
+
+            <div class="controls">
+                <div class="display">
+                    <div class="label">SALDO</div>
+                    <div id="balance">100.00</div>
+                </div>
+                <button id="spin-btn">SPIN (0.20)</button>
+                <div class="display">
+                    <div class="label">WYGRANA</div>
+                    <div id="win-amount">0.00</div>
+                </div>
+            </div>
+            
+            <div id="status-msg">Spróbuj szczęścia!</div>
+        </div>
+
+        <div class="paytable">
+            <h3>TABELA WYPŁAT</h3>
+            <p>7️⃣ 7️⃣ 7️⃣ = 10.00 PLN</p>
+            <p>💰 💰 💰 = 4.00 PLN</p>
+            <p>🍉 🍉 🍉 = 1.60 PLN</p>
+            <p>🍒 🍒 🍒 = 0.40 PLN</p>
+            <p>🍒 🍒 ❓ = 0.10 PLN</p>
+        </div>
+    </div>
+
+    <script src="grosik.js"></script>
+</body>
+</html>

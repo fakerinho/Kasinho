@@ -1,0 +1,191 @@
+:root {
+    --gold: #d4af37;
+    --dark-gold: #996515;
+    --bg-dark: #0a0a0a;
+    --card-bg: #161616;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-dark);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Nawigacja */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid var(--dark-gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+}
+
+.deposit-btn {
+    background: var(--gold);
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1596838132731-bc9651a41867?q=80&w=2070&auto=format&fit=crop'); /* Opcjonalne tło */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    color: var(--gold);
+    margin: 0;
+}
+
+/* Statystyki na żywo */
+.live-stats {
+    background: #111;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #222;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    box-shadow: 0 0 5px #00ff00;
+}
+
+/* Karty Gier */
+.container {
+    padding: 50px 5%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.game-selection {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background: var(--card-bg);
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #333;
+    transition: transform 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #444;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.badge.premium {
+    background: var(--gold);
+    color: black;
+}
+
+.game-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background: #222;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-meta {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.play-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.game-card:hover .play-btn {
+    background: var(--gold);
+    color: black;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 40px;
+    color: #444;
+    margin-top: 50px;
+}
+
+.footer-badges {
+    margin-bottom: 15px;
+}
+
+.cert {
+    border: 1px solid #444;
+    padding: 2px 8px;
+    margin: 0 5px;
+    font-size: 0.8rem;
+}
+
+.gold-text { color: var(--gold); }
